@@ -17,7 +17,7 @@ const reviewRoutes = require('./routes/review.routes');
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:4200', // Angular default port
+  origin: process.env.CORS_ORIGIN || '*', // Allow all origins by default or use env var
   credentials: true
 }));
 app.use(express.json());
@@ -38,6 +38,15 @@ app.use('/api/favorites', favoriteRoutes);
 app.use('/api/profile', profileRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api', reviewRoutes);
+
+// Root route
+app.get('/', (req, res) => {
+  res.json({
+    success: true,
+    message: 'Azzuna Backend API is running',
+    documentation: '/api/health'
+  });
+});
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {

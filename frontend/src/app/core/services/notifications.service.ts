@@ -16,7 +16,7 @@ export interface Notification {
     providedIn: 'root'
 })
 export class NotificationsService {
-    private apiUrl = 'http://localhost:3000/api/notifications';
+    private apiUrl = 'https://project-t84o.onrender.com/api/notifications';
 
     constructor(private http: HttpClient) { }
 

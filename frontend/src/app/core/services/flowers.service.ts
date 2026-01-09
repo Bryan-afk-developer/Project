@@ -42,7 +42,7 @@ export interface FlowerFilters {
     providedIn: 'root'
 })
 export class FlowersService {
-    private apiUrl = 'http://localhost:3000/api/flowers';
+    private apiUrl = 'https://project-t84o.onrender.com/api/flowers';
 
     constructor(private http: HttpClient) { }
 

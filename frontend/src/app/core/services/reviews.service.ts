@@ -27,7 +27,7 @@ export interface Rating {
     providedIn: 'root'
 })
 export class ReviewsService {
-    private apiUrl = 'http://localhost:3000/api';
+    private apiUrl = 'https://project-t84o.onrender.com/api';
 
     constructor(private http: HttpClient) { }
 

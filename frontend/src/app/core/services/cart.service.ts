@@ -28,7 +28,7 @@ export interface Cart {
     providedIn: 'root'
 })
 export class CartService {
-    private apiUrl = 'http://localhost:3000/api/cart';
+    private apiUrl = 'https://project-t84o.onrender.com/api/cart';
     private cartSubject = new BehaviorSubject<Cart | null>(null);
     public cart$ = this.cartSubject.asObservable();
 

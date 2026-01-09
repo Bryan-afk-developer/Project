@@ -26,7 +26,7 @@ interface AuthResponse {
     providedIn: 'root'
 })
 export class AuthService {
-    private apiUrl = 'http://localhost:3000/api/auth';
+    private apiUrl = 'https://project-t84o.onrender.com/api/auth';
     private currentUserSubject = new BehaviorSubject<User | null>(this.getUserFromStorage());
     public currentUser$ = this.currentUserSubject.asObservable();
 

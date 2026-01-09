@@ -24,7 +24,7 @@ export interface Order {
     providedIn: 'root'
 })
 export class OrdersService {
-    private apiUrl = 'http://localhost:3000/api/orders';
+    private apiUrl = 'https://project-t84o.onrender.com/api/orders';
 
     constructor(private http: HttpClient) { }
 
