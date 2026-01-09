@@ -1,0 +1,36 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-purple: #8e24aa;
+    --primary-pink: #e91e63;
+    --bg-creamy: #fff5f8;
+    /* Light pink background */
+    --text-dark: #333;
+    --text-gray: #666;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --radius-lg: 15px;
+    --radius-md: 8px;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--bg-creamy);
+    margin: 0;
+    color: var(--text-dark);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
